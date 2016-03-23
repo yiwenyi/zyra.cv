@@ -29,7 +29,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
-                sectionsColor: ['#7BAABE', '#ffb8b8', '#79e8d0', 'whitesmoke', '#ccddff'],
+                sectionsColor: ['#7BAABE', '#whitesmoke', '#7BAABE', 'whitesmoke', '#ccddff'],
                 anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
                 menu: '#menu',
                 scrollingSpeed: 300
@@ -46,6 +46,7 @@
     <li data-menuanchor="4thpage"><a href="#4thpage">联系方式</a></li>
 </ul>
 <div id="fullpage">
+    <!--page one-->
     <div class="section " id="section0">
         <div class="container">
             <div class="row">
@@ -61,14 +62,50 @@
             </div>
         </div>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis fuga impedit itaque maiores mollitia ratione repellat repudiandae, veniam vitae. A cumque enim expedita nisi, pariatur provident soluta tempora. Nostrum?
+            不会招聘的鼓励师不是好前端
+        </p>
+
+        <p>
+            This resume is for front-end develope position
         </p>
     </div>
+    <!--page two-->
     <div class="section" id="section1">
         <div class="intro">
-            <h1>Example</h1>
+            <h1>My skills</h1>
 
-            <p>HTML markup example to define 4 sections.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12 col-sm-push-4">
+                        <div class="skill-wrapper">
+                            <h5>IT</h5>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JAVASCRIPT</span>
+                            <br/>
+                            <span class="skilled4">JQUERY</span>
+                            <span class="skilled3">ANGULARJS</span>
+                            <span class="skilled1">EXTJS</span>
+                            <span class="">BOOTSTRAP</span>
+                            <br/>
+                            <span class="skilled4">AJAX</span>
+                            <span class="skilled2">PHP</span>
+                            <span class="skilled2">HTTP</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 col-sm-pull-4">
+                        <div class="skill-wrapper">
+
+                            <h5>English</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="skill-wrapper">
+                            <h5>Office</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="section" id="section2">
