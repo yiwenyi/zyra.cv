@@ -32,20 +32,24 @@
                 sectionsColor: ['#7BAABE', '#whitesmoke', '#7BAABE', 'whitesmoke', '#7BAABE'],
                 anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
                 menu: '#menu',
-                scrollingSpeed: 300
+                scrollingSpeed: 1000,
+                scrollBar: true,
+                navigation: true,
+                navigationPosition: 'left',
+                navigationTooltips: ['首页', '技能', '经历', '项目', '联系方式'],
+                autoScrolling: true
             });
-
         });
     </script>
 </head>
 <body>
-<ul id="menu">
-    <li data-menuanchor="firstPage"><a href="#firstPage">首页</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">技能</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">经历</a></li>
-    <li data-menuanchor="4thpage"><a href="#4thpage">项目经验</a></li>
-    <li data-menuanchor="lastPage"><a href="#lastPage">联系方式</a></li>
-</ul>
+<!--<ul id="menu">-->
+<!--<li data-menuanchor="firstPage"><a href="#firstPage">首页</a></li>-->
+<!--<li data-menuanchor="secondPage"><a href="#secondPage">技能</a></li>-->
+<!--<li data-menuanchor="3rdPage"><a href="#3rdPage">经历</a></li>-->
+<!--<li data-menuanchor="4thpage"><a href="#4thpage">项目经验</a></li>-->
+<!--<li data-menuanchor="lastPage"><a href="#lastPage">联系方式</a></li>-->
+<!--</ul>-->
 <div id="fullpage">
     <!--page one-->
     <div class="section " id="section0">
@@ -103,7 +107,7 @@
                             <span>BEC-B1</span>
                         </div>
                     </div>
-                    <div class="col-sm-4 col-xs-12 hidden-xs">
+                    <div class="col-sm-4 col-xs-12">
                         <div class="skill-wrapper">
                             <h5>Office</h5>
                             <span>WORD</span>
@@ -119,42 +123,39 @@
         </div>
     </div>
     <div class="section" id="section2">
-        <div class="slide">
-            <div class="intro">
-                <h1>教育经历</h1>
+        <div class="intro">
 
-                <p>广东药科大学 <small>（2011-2015）</small>&nbsp;&nbsp;&nbsp;&nbsp;本科 </p>
-                <p>国际经济与贸易</p>
-            </div>
+            <h1>经历</h1>
 
-        </div>
-        <div class="slide">
-            <div class="intro">
-
-                <h1>实习经历</h1>
-
-                <p>网易运营中心&nbsp;&nbsp;&nbsp;&nbsp;英雄三国论坛管理员（2014.8-2014.10）</p>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="intro">
-
-                <h1>工作经历</h1>
-
-                <p>前程无忧&nbsp;&nbsp;&nbsp;&nbsp;RPO项目专员（2014.12-2015.12）</p>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="intro">
-
-                <h1>Compatible</h1>
-
-                <p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible
-                    browser! Lets give them a chance to see your site in a proper way!</p>
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <ul class="nav nav-pills" id="myExperience">
+                            <li role="presentation"><button class="btn btn-default btn-info" id="p1">教育经历</button></li>
+                            <li role="presentation"><button class="btn btn-default" id="p2" >工作经历</button></li>
+                            <li role="presentation"><button class="btn btn-default" id="p3">实习经历</button></li>
+                        </ul>
+                    </div>
+                    <div class="panel-body" id="Experiencep1">
+                        <h2>2011.9-2015.6&nbsp;&nbsp;&nbsp;&nbsp;广东药科大学&nbsp;&nbsp;&nbsp;&nbsp;国际经济与贸易（医药国际贸易）&nbsp;&nbsp;&nbsp;&nbsp;本科</h2><br/>
+                        <p>主修课程：国际贸易、国际金融、Visual Basic、大学计算机基础、英文外贸函电、会计学、统计学、管理学</p>
+                        <br/>
+                        <h3>学习成果：</h3>
+                        <h5>2012—2013学年度	广东药学院优秀学生 三等奖学金</h5>
+                        <h5>2011—2012学年度	广东药学院 校级先进学生志愿者</h5>
+                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 广东药学院青年志愿者中心优秀队长</h5>
+                    </div>
+                    <div class="panel-body" id="Experiencep2" style="display: none;">
+                        工作经历
+                    </div>
+                    <div class="panel-body" id="Experiencep3" style="display: none;">
+                        实习经历
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="section" id="section3">
+    <div class="section " id="section3">
         <div class="intro">
             <h1>Working On Tablets</h1>
 
@@ -189,5 +190,6 @@
     //        document.body.appendChild(s)
     //    })();
 </script>
+<script src="js/my.js"></script>
 </body>
 </html>
