@@ -6,4 +6,5 @@ $('#myExperience button').click(function(){
     $('#myExperience button').removeClass('btn-info');
     $(this).addClass('btn-info');
     $('#Experience'+$(this).attr('id')).css('display','block')
-})
+    $('#myExp').text($(this).text());
+});

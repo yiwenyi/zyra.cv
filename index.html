@@ -44,13 +44,6 @@
     </script>
 </head>
 <body>
-<!--<ul id="menu">-->
-<!--<li data-menuanchor="firstPage"><a href="#firstPage">首页</a></li>-->
-<!--<li data-menuanchor="secondPage"><a href="#secondPage">技能</a></li>-->
-<!--<li data-menuanchor="3rdPage"><a href="#3rdPage">经历</a></li>-->
-<!--<li data-menuanchor="4thpage"><a href="#4thpage">项目经验</a></li>-->
-<!--<li data-menuanchor="lastPage"><a href="#lastPage">联系方式</a></li>-->
-<!--</ul>-->
 <div id="fullpage">
     <!--page one-->
     <div class="section " id="section0">
@@ -68,6 +61,9 @@
             </div>
         </div>
         <div class="container smartVote">
+            <p>
+                招前端不？会卖萌的那种^^
+            </p>
             <p>
                 This resume is for front-end developer position
             </p>
@@ -89,8 +85,8 @@
                             <br/>
                             <span class="skilled4">JQUERY</span>
                             <span class="skilled3">ANGULARJS</span>
-                            <span class="skilled1">EXTJS</span>
-                            <span class="">BOOTSTRAP</span>
+                            <span class="skilled1">Less</span>
+                            <span class="skilled3">BOOTSTRAP</span>
                             <br/>
                             <span class="skilled4">AJAX</span>
                             <span class="skilled2">PHP</span>
@@ -122,7 +118,7 @@
     <!--page three-->
     <div class="section" id="section2">
         <div class="intro">
-            <h1>经历</h1>
+            <h1 id="myExp">经历</h1>
 
             <div class="container">
                 <div class="panel panel-default">
@@ -154,9 +150,9 @@
 
                         <h3>学习成果：</h3>
 
-                        <p>2012—2013学年度 广东药学院优秀学生 三等奖学金</p>
+                        <p>2012-2013学年度 广东药学院优秀学生 三等奖学金</p>
 
-                        <p>2011—2012学年度 广东药学院 校级先进学生志愿者</p>
+                        <p>2011-2012学年度 广东药学院 校级先进学生志愿者</p>
 
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             广东药学院青年志愿者中心优秀队长</p>
@@ -172,17 +168,26 @@
                         </ul>
                         <h3>参与项目：</h3>
 
+                        <p>IT行业：广州交通、汉威科技、马瑞利汽车电子等</p>
                         <p>汽车行业：广汽菲亚特克莱斯勒（广州工厂和武汉工厂）、本田技研、仁孚汽车等</p>
 
-                        <p>IT行业：广州交通、汉威科技、马瑞利汽车电子</p>
                     </div>
                     <div class="panel-body" id="Experiencep3" style="display: none;">
                         <h2>
-                            2014.8-2014.10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网易运营中心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;英雄三国论坛管理员</h2>
+                            2014.8-2014.10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网易运营中心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;英雄三国论坛管理员
+                        </h2>
                         <ul>
-                            <li>1.把握游戏热点，策划论坛活动 <u>(使用HTML和ps)</u>，活跃论坛氛围，管理论坛环境，营造轻松热烈的交流氛围；</li>
+                            <li>1.把握游戏热点，策划论坛活动 <u>(使用HTML和Photoshop制作活动页面)</u>，活跃论坛氛围，管理论坛环境，营造轻松热烈的交流氛围；</li>
                             <li>2.挖掘用户需求，协调各方资源独立跟进完成推广宣传项目，负责玩家版主的招募和日常管理，引导和支持玩家版主工作。</li>
                         </ul>
+                        <h3>实习的收获：</h3>
+                        <ul>
+                            <li>1.加强了对Photoshop的认识；</li>
+                            <li>2.初次认识HTML；</li>
+                            <li>3.对活动策划的流程有了进一步的思考；</li>
+                            <li>4.对游戏运营有了基本的了解。</li>
+                        </ul>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -191,12 +196,34 @@
     <!--page four-->
     <div class="section" id="section3">
         <div class="intro">
-            <h1>Working On Tablets</h1>
+            <h1>项目</h1>
+            <div class="container">
+                <!--kaifanla-->
+                <div class="row">
+                    <div class="col-sm-2 col-xs-4">
+                        <a href="http://yi2kaifanla.applinzi.com">
+                            <img src="img/kaifanla.png" alt="kaifanlai" class="project-i"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-10 col-xs-8">
+                        <p class="project-t">
+                            使用AngularJs和jQueryMoubile开发的单页面应用<a href="https://github.com/yiwenyi/yikaifanla">（代码地址,点击图片查看页面效果）</a>
+                        </p>
 
-            <p>
-                Designed to fit to different screen sizes as well as tablet and mobile devices.
-                <br/><br/><br/><br/><br/><br/>
-            </p>
+                    </div>
+                </div>
+                <!--intel-->
+                <div class="row">
+                    <div class="col-sm-2 col-xs-4">
+                        <a href="http://yiwenyi.github.io/yiintel">
+                            <img src="img/intel.png" alt="intel" class="project-i"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-10 col-xs-8">
+                        <p class="project-t">使用bootStrap模仿intel官网并且使用less进行定制的页面<a href="https://github.com/yiwenyi/yiintel">（代码地址,点击图片查看页面效果）</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--page fiv-->
